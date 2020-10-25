@@ -5,7 +5,6 @@ export interface ISettings {
   interval: number;
   prefix: string;
   token: string;
-  apiKey: string;
   channels: {
     gb: string;
     nz: string;
@@ -62,7 +61,7 @@ export async function getProduct(sku: string, region: string) {
   );
 
   if (!response.ok) return false;
-  else return await response.json();
+  else return (await response.json()) as IProduct;
 }
 
 export function error(err: string) {

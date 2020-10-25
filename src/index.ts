@@ -78,8 +78,8 @@ export default class Bot extends Client {
           if (!product) continue;
 
           const productInCache = this.productsCache.get(group.sku);
-          if (!productInCache || productInCache !== product) {
-            const extras = await getExtraDetails(
+          if (productInCache !== product) {
+            const extras = getExtraDetails(
               group.sku,
               group.region,
               group.important
