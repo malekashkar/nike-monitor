@@ -1,6 +1,4 @@
 export default {
-  webhook:
-    "https://canary.discord.com/api/webhooks/763795642778648616/pZwF899xoZ6_z55I6QRiMwc0dBhR8INTqXIop9Qu4_wFMN7GWKeiVl-_yiCyFIBZrIRx",
   interval: 30,
   prefix: "!",
   token: "NzYzNzk4Mzg3OTc0ODY0OTM2.X388rg.QzQfSP9X8SguWm3nP6UuVyigA3o",
